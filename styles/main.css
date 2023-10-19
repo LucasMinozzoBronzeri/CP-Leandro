@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('/images/fc_barcelona_2015_16_hd_wallpaper_by_selvedinfcb_d8ujktp-fullview.jpg');
+    height: 1000px;
+}
+
+.h1 .eu{
+    margin: 30px 100px;
+    padding: 30px;
+    text-align: center;
+    border: 3px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: auto;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+}
+
+.section1 > div {
+    flex: 1;
+
+}
+
+.section1 > div:first-child {
+    background-color: brown;
+}
+
+.section1 > {
+    background-color: blueviolet;
+}
