@@ -2,28 +2,34 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #831d1c;
 }
 
-.h1{
+.header1{
     display: flex;
     justify-content: center;
     background-size: cover;
-    background-image: url('/images/fc_barcelona_2015_16_hd_wallpaper_by_selvedinfcb_d8ujktp-fullview.jpg');
+    background-image: url("../images/fc_barcelona_2015_16_hd_wallpaper_by_selvedinfcb_d8ujktp-fullview.jpg");
     height: 1000px;
+
 }
 
-.h1 .eu{
-    margin: 30px 100px;
+header > div{
+    margin: 75px;
+    margin-top: 250px;
     padding: 30px;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid #831d1c;
     width: 50%;
     display: flex;
     flex-direction: column;
+    color: #267acf;
+    background-color: #831d1c;
 }
 
 main {
     flex: auto;
+    background-color: #831d1c;
 }
 .section1{
     display: flex;
@@ -36,9 +42,85 @@ main {
 }
 
 .section1 > div:first-child {
-    background-color: brown;
+    margin: 0px;
+    padding: 100px;
+    width: 50%;
+    background-color: #831d1c;
+    text-align: left;
+    color: #267acf;
 }
 
-.section1 > {
-    background-color: blueviolet;
+.section1 .php{
+    font-size: 40px;
 }
+
+h2{
+    font-size: 100px;
+}
+
+.section1 .b{
+    margin: 0px;
+    padding: 100px;
+    width: 50%;
+    background-color: #267acf;
+    text-align: right;
+    color: #831d1c;
+}
+.section1 .hph{
+    font-size: 40px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+}
+
+.section2 > div{
+    flex: 1;
+}
+
+.section2 > div:first-child{
+    margin: 0px;
+    padding: 200px;
+    width: 50%;
+    background-color: #267acf;
+    color: #831d1c;
+    height: 50vh;
+    background-image: url('../images/Jogador_Lionel_Messi_PNG_Transparente_Sem_Fundo_novo1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+
+
+.section2 .d{
+    margin: 0px;
+    padding: 200px;
+    width: 50%;
+    background-color: #831d1c;
+    color: #267acf;
+}
+
+
+@media(max-width: 800px) {
+   header{
+    flex-direction: column;
+   }
+   .section1{
+    flex-direction: column;
+   }
+   .section1 .b{
+    text-align: left;
+   }
+   .section2{
+    flex-direction: column-reverse;
+   }
+   .section2 > div:first-child{
+    padding: 100px;
+   }
+   .section2 .d{
+    padding: 100px;
+   }
+    
+}
+
